@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Technology - Exovade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Global 3D Background -->
+    <div class="global-3d-background">
+        <!-- Top Left Quadrant -->
+        <div class="bg-3d-object bg-cube-small" style="top: 10%; left: 5%; animation: bgCubeFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 15%; left: 15%; animation: bgSphereFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 25%; left: 8%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 35%; left: 12%; animation: bgHexagonFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 45%; left: 6%; animation: bgDiamondFloat1 5s infinite;"></div>
+        
+        <!-- Top Right Quadrant -->
+        <div class="bg-3d-object bg-cube-medium" style="top: 8%; right: 10%; animation: bgCubeFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 18%; right: 5%; animation: bgSphereFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 28%; right: 15%; animation: bgTriangleFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 38%; right: 8%; animation: bgDiamondFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 48%; right: 12%; animation: bgHexagonFloat2 5s infinite;"></div>
+        
+        <!-- Bottom Left Quadrant -->
+        <div class="bg-3d-object bg-cube-small" style="bottom: 15%; left: 10%; animation: bgCubeFloat3 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 25%; left: 5%; animation: bgSphereFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 35%; left: 18%; animation: bgTriangleFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 45%; left: 12%; animation: bgDiamondFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 55%; left: 8%; animation: bgHexagonFloat1 7s infinite;"></div>
+        
+        <!-- Bottom Right Quadrant -->
+        <div class="bg-3d-object bg-cube-medium" style="bottom: 12%; right: 8%; animation: bgCubeFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 22%; right: 15%; animation: bgSphereFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 32%; right: 6%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 42%; right: 12%; animation: bgDiamondFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 52%; right: 10%; animation: bgHexagonFloat2 6s infinite;"></div>
+        
+        <!-- Center Scattered Objects -->
+        <div class="bg-3d-object bg-cube-small" style="top: 60%; left: 45%; animation: bgCubeFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 70%; left: 55%; animation: bgSphereFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 20%; left: 50%; animation: bgTriangleFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 80%; left: 40%; animation: bgDiamondFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 30%; left: 60%; animation: bgHexagonFloat1 5s infinite;"></div>
+        
+        <!-- Additional Scattered Objects -->
+        <div class="bg-3d-object bg-cube-medium" style="top: 5%; left: 30%; animation: bgCubeFloat3 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 85%; left: 20%; animation: bgSphereFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 50%; left: 80%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 65%; left: 75%; animation: bgDiamondFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 40%; left: 85%; animation: bgHexagonFloat2 8s infinite;"></div>
+        
+        <!-- Edge Objects -->
+        <div class="bg-3d-object bg-cube-small" style="top: 75%; left: 2%; animation: bgCubeFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 55%; right: 2%; animation: bgSphereFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 90%; left: 70%; animation: bgTriangleFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 10%; right: 25%; animation: bgDiamondFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 95%; left: 50%; animation: bgHexagonFloat1 5s infinite;"></div>
+        
+        <!-- Additional Dense Coverage -->
+        <div class="bg-3d-object bg-cube-small" style="top: 12%; left: 25%; animation: bgCubeFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 22%; left: 35%; animation: bgSphereFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 32%; left: 45%; animation: bgTriangleFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 42%; left: 55%; animation: bgDiamondFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 52%; left: 65%; animation: bgHexagonFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-cube-medium" style="top: 62%; left: 75%; animation: bgCubeFloat3 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 72%; left: 85%; animation: bgSphereFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 82%; left: 95%; animation: bgTriangleFloat1 8s infinite;"></div>
+        
+        <!-- Right Side Dense Coverage -->
+        <div class="bg-3d-object bg-diamond" style="top: 15%; right: 35%; animation: bgDiamondFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 25%; right: 45%; animation: bgHexagonFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="top: 35%; right: 55%; animation: bgCubeFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 45%; right: 65%; animation: bgSphereFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 55%; right: 75%; animation: bgTriangleFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 65%; right: 85%; animation: bgDiamondFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 75%; right: 95%; animation: bgHexagonFloat2 7s infinite;"></div>
+        
+        <!-- Bottom Dense Coverage -->
+        <div class="bg-3d-object bg-cube-medium" style="bottom: 5%; left: 25%; animation: bgCubeFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 8%; left: 35%; animation: bgSphereFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 11%; left: 45%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 14%; left: 55%; animation: bgDiamondFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 17%; left: 65%; animation: bgHexagonFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="bottom: 20%; left: 75%; animation: bgCubeFloat3 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 23%; left: 85%; animation: bgSphereFloat1 6s infinite;"></div>
+        
+        <!-- Top Dense Coverage -->
+        <div class="bg-3d-object bg-triangle" style="top: 2%; left: 20%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 4%; left: 40%; animation: bgDiamondFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 6%; left: 60%; animation: bgHexagonFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="top: 8%; left: 80%; animation: bgCubeFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 3%; right: 20%; animation: bgSphereFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 5%; right: 40%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 7%; right: 60%; animation: bgDiamondFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 9%; right: 80%; animation: bgHexagonFloat1 6s infinite;"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Exovade</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="our-mission.html" class="nav-link">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a href="our-technology.html" class="nav-link">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a href="our-vision.html" class="nav-link">Vision</a>
+                </li>
+                <li class="nav-item">
+                    <a href="our-team.html" class="nav-link">Team</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Technology Section -->
+    <section class="technology-page">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Our Technology</h1>
+                <p class="page-subtitle">Cutting-edge solutions powered by innovation</p>
+            </div>
+            
+            <div class="technology-content">
+                <div class="tech-overview">
+                    <h2 class="content-title">Technology Stack</h2>
+                    <p class="content-description">
+                        We leverage the latest technologies and frameworks to deliver robust, scalable, and future-proof solutions. Our technology stack is carefully curated to ensure optimal performance, security, and maintainability.
+                    </p>
+                </div>
+                
+                <div class="tech-categories">
+                    <div class="tech-category">
+                        <div class="category-header">
+                            <i class="fas fa-code"></i>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <div class="tech-icon">⚛️</div>
+                                <div class="tech-info">
+                                    <h4>React & Next.js</h4>
+                                    <p>Modern JavaScript frameworks for building dynamic user interfaces</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🎨</div>
+                                <div class="tech-info">
+                                    <h4>Tailwind CSS</h4>
+                                    <p>Utility-first CSS framework for rapid UI development</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">📱</div>
+                                <div class="tech-info">
+                                    <h4>React Native</h4>
+                                    <p>Cross-platform mobile app development</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <div class="category-header">
+                            <i class="fas fa-server"></i>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <div class="tech-icon">🟢</div>
+                                <div class="tech-info">
+                                    <h4>Node.js & Express</h4>
+                                    <p>High-performance server-side JavaScript runtime</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🐍</div>
+                                <div class="tech-info">
+                                    <h4>Python & C++</h4>
+                                    <p>Robust backend development with AI/ML capabilities</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">☁️</div>
+                                <div class="tech-info">
+                                    <h4>Vercel & AWS</h4>
+                                    <p>Cloud infrastructure and serverless computing</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <div class="category-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Data & Analytics</h3>
+                        </div>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <div class="tech-icon">🗄️</div>
+                                <div class="tech-info">
+                                    <h4>MongoDB</h4>
+                                    <p>Relational and NoSQL database solutions</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">📊</div>
+                                <div class="tech-info">
+                                    <h4>Apache Kafka</h4>
+                                    <p>Real-time data streaming and processing</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🤖</div>
+                                <div class="tech-info">
+                                    <h4>TensorFlow & PyTorch</h4>
+                                    <p>Machine learning and artificial intelligence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <div class="category-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Security & DevOps</h3>
+                        </div>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <div class="tech-icon">🐳</div>
+                                <div class="tech-info">
+                                    <h4>Docker</h4>
+                                    <p>Containerization and orchestration</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">🔒</div>
+                                <div class="tech-info">
+                                    <h4>JWT</h4>
+                                    <p>Secure authentication and authorization</p>
+                                </div>
+                            </div>
+                            <div class="tech-item">
+                                <div class="tech-icon">⚡</div>
+                                <div class="tech-info">
+                                    <h4>CI/CD Pipelines</h4>
+                                    <p>Automated testing and deployment</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Exovade</span>
+                    </div>
+                    <p style="margin-top: 1rem; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">We are building innovative, future-ready solutions that not only meet the demands of the digital age, but also anticipate the challenges of tomorrow—empowering businesses and individuals to thrive in an ever-evolving technological landscape..</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our-mission.html">Our Mission</a></li>
+                        <li><a href="our-vision.html">Our Vision</a></li>
+                        <li><a href="our-technology.html">Our Technology</a></li>
+                        <li><a href="our-team.html">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Exovade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

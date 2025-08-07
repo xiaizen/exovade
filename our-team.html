@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - Exovade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Global 3D Background -->
+    <div class="global-3d-background">
+        <!-- Top Left Quadrant -->
+        <div class="bg-3d-object bg-cube-small" style="top: 10%; left: 5%; animation: bgCubeFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 15%; left: 15%; animation: bgSphereFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 25%; left: 8%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 35%; left: 12%; animation: bgHexagonFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 45%; left: 6%; animation: bgDiamondFloat1 5s infinite;"></div>
+        
+        <!-- Top Right Quadrant -->
+        <div class="bg-3d-object bg-cube-medium" style="top: 8%; right: 10%; animation: bgCubeFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 18%; right: 5%; animation: bgSphereFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 28%; right: 15%; animation: bgTriangleFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 38%; right: 8%; animation: bgDiamondFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 48%; right: 12%; animation: bgHexagonFloat2 5s infinite;"></div>
+        
+        <!-- Bottom Left Quadrant -->
+        <div class="bg-3d-object bg-cube-small" style="bottom: 15%; left: 10%; animation: bgCubeFloat3 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 25%; left: 5%; animation: bgSphereFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 35%; left: 18%; animation: bgTriangleFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 45%; left: 12%; animation: bgDiamondFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 55%; left: 8%; animation: bgHexagonFloat1 7s infinite;"></div>
+        
+        <!-- Bottom Right Quadrant -->
+        <div class="bg-3d-object bg-cube-medium" style="bottom: 12%; right: 8%; animation: bgCubeFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 22%; right: 15%; animation: bgSphereFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 32%; right: 6%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 42%; right: 12%; animation: bgDiamondFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 52%; right: 10%; animation: bgHexagonFloat2 6s infinite;"></div>
+        
+        <!-- Center Scattered Objects -->
+        <div class="bg-3d-object bg-cube-small" style="top: 60%; left: 45%; animation: bgCubeFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 70%; left: 55%; animation: bgSphereFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 20%; left: 50%; animation: bgTriangleFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 80%; left: 40%; animation: bgDiamondFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 30%; left: 60%; animation: bgHexagonFloat1 5s infinite;"></div>
+        
+        <!-- Additional Scattered Objects -->
+        <div class="bg-3d-object bg-cube-medium" style="top: 5%; left: 30%; animation: bgCubeFloat3 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 85%; left: 20%; animation: bgSphereFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 50%; left: 80%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 65%; left: 75%; animation: bgDiamondFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 40%; left: 85%; animation: bgHexagonFloat2 8s infinite;"></div>
+        
+        <!-- Edge Objects -->
+        <div class="bg-3d-object bg-cube-small" style="top: 75%; left: 2%; animation: bgCubeFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 55%; right: 2%; animation: bgSphereFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 90%; left: 70%; animation: bgTriangleFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 10%; right: 25%; animation: bgDiamondFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 95%; left: 50%; animation: bgHexagonFloat1 5s infinite;"></div>
+        
+        <!-- Additional Dense Coverage -->
+        <div class="bg-3d-object bg-cube-small" style="top: 12%; left: 25%; animation: bgCubeFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 22%; left: 35%; animation: bgSphereFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 32%; left: 45%; animation: bgTriangleFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 42%; left: 55%; animation: bgDiamondFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 52%; left: 65%; animation: bgHexagonFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-cube-medium" style="top: 62%; left: 75%; animation: bgCubeFloat3 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 72%; left: 85%; animation: bgSphereFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 82%; left: 95%; animation: bgTriangleFloat1 8s infinite;"></div>
+        
+        <!-- Right Side Dense Coverage -->
+        <div class="bg-3d-object bg-diamond" style="top: 15%; right: 35%; animation: bgDiamondFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 25%; right: 45%; animation: bgHexagonFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="top: 35%; right: 55%; animation: bgCubeFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 45%; right: 65%; animation: bgSphereFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 55%; right: 75%; animation: bgTriangleFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 65%; right: 85%; animation: bgDiamondFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 75%; right: 95%; animation: bgHexagonFloat2 7s infinite;"></div>
+        
+        <!-- Bottom Dense Coverage -->
+        <div class="bg-3d-object bg-cube-medium" style="bottom: 5%; left: 25%; animation: bgCubeFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 8%; left: 35%; animation: bgSphereFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 11%; left: 45%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 14%; left: 55%; animation: bgDiamondFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 17%; left: 65%; animation: bgHexagonFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="bottom: 20%; left: 75%; animation: bgCubeFloat3 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 23%; left: 85%; animation: bgSphereFloat1 6s infinite;"></div>
+        
+        <!-- Top Dense Coverage -->
+        <div class="bg-3d-object bg-triangle" style="top: 2%; left: 20%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 4%; left: 40%; animation: bgDiamondFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 6%; left: 60%; animation: bgHexagonFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="top: 8%; left: 80%; animation: bgCubeFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 3%; right: 20%; animation: bgSphereFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 5%; right: 40%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 7%; right: 60%; animation: bgDiamondFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 9%; right: 80%; animation: bgHexagonFloat1 6s infinite;"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Exovade</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="our-mission.html" class="nav-link">Mission</a>
+                </li>
+                <li class="nav-item">
+                    <a href="our-technology.html" class="nav-link">Technology</a>
+                </li>
+                <li class="nav-item">
+                    <a href="our-vision.html" class="nav-link">Vision</a>
+                </li>
+                <li class="nav-item">
+                    <a href="our-team.html" class="nav-link">Team</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Team Section -->
+    <section class="team-page">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Our Team</h1>
+                <p class="page-subtitle">Meet the brilliant minds behind Exovade</p>
+            </div>
+            
+            <div class="team-content">
+                <div class="team-overview">
+                    <h2 class="content-title">Leadership Team</h2>
+                    <p class="content-description">
+                        Our diverse team of experts brings together decades of experience in technology, design, and business strategy. We're united by our passion for innovation and commitment to delivering exceptional results.
+                    </p>
+                </div>
+                
+                <div class="leadership-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Y. Emre Kaplan</h3>
+                            <p class="member-role">Chief Executive Officer</p>
+                            <p class="member-bio">A passionate individual with a keen interest in both software development and design. Continuously exploring new technologies and creative approaches to deliver impactful digital experiences..</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/yusufemrekaplann/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/xiaizen" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>M. Roni Kaplan</h3>
+                            <p class="member-role">Chief Executive Officer</p>
+                            <p class="member-bio">A technology entrepreneur who began coding at an early age and has since built a strong foundation in software development. Currently leading and managing multiple projects with a focus on innovation and scalable solutions..</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/ecioko/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/ecioko" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                        <div class="member-info">
+                            <h3>Seda Barkuz</h3>
+                            <p class="member-role">Chief Operating Officer</p>
+                            <p class="member-bio">An entrepreneur and operations manager currently pursuing a degree at Yıldız Technical University. Combines academic knowledge with real-world leadership experience to drive strategic and efficient business operations..</p>
+                            <div class="member-social">
+                                <a href="https://www.linkedin.com/in/seda-nur-barkuz-snb5/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="#" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+                
+                <div class="departments-section">
+                    <h3>Our Departments</h3>
+                    <div class="departments-grid">
+                        <div class="department">
+                            <div class="dept-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Engineering</h4>
+                            <p class="dept-count">45+ Engineers</p>
+                            <p>Full-stack developers, DevOps engineers, and AI specialists working on cutting-edge solutions.</p>
+                        </div>
+                        
+                        <div class="department">
+                            <div class="dept-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h4>Design</h4>
+                            <p class="dept-count">12+ Designers</p>
+                            <p>UX/UI designers, product designers, and design researchers creating intuitive experiences.</p>
+                        </div>
+                        
+                        <div class="department">
+                            <div class="dept-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Product</h4>
+                            <p class="dept-count">8+ Managers</p>
+                            <p>Product managers and analysts driving strategic product decisions and roadmap planning.</p>
+                        </div>
+                        
+                        <div class="department">
+                            <div class="dept-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <h4>Business</h4>
+                            <p class="dept-count">15+ Professionals</p>
+                            <p>Sales, marketing, and business development professionals expanding our global reach.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="culture-section">
+                    <h3>Our Culture</h3>
+                    <div class="culture-values">
+                        <div class="value">
+                            <div class="value-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h4>Innovation First</h4>
+                            <p>We encourage creative thinking and provide resources for experimentation and learning.</p>
+                        </div>
+                        
+                        <div class="value">
+                            <div class="value-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Collaborative Spirit</h4>
+                            <p>We believe in the power of teamwork and cross-functional collaboration.</p>
+                        </div>
+                        
+                        <div class="value">
+                            <div class="value-icon">
+                                <i class="fas fa-balance-scale"></i>
+                            </div>
+                            <h4>Work-Life Balance</h4>
+                            <p>We support flexible working arrangements and prioritize employee well-being.</p>
+                        </div>
+                        
+                        <div class="value">
+                            <div class="value-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Continuous Learning</h4>
+                            <p>We invest in professional development and provide opportunities for skill advancement.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="join-team-section">
+                    <div class="join-cta">
+                        <h3>Join Our Team</h3>
+                        <p>We're always looking for talented individuals who share our passion for innovation and excellence.</p>
+                        <a href="#" class="cta-button">View Open Positions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Exovade</span>
+                    </div>
+                    <p style="margin-top: 1rem; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">We are building innovative, future-ready solutions that not only meet the demands of the digital age, but also anticipate the challenges of tomorrow—empowering businesses and individuals to thrive in an ever-evolving technological landscape..</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our-mission.html">Our Mission</a></li>
+                        <li><a href="our-vision.html">Our Vision</a></li>
+                        <li><a href="our-technology.html">Our Technology</a></li>
+                        <li><a href="our-team.html">Our Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Exovade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

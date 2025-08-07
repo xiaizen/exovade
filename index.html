@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exovade</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Global 3D Background -->
+    <div class="global-3d-background">
+        <!-- Top Left Quadrant -->
+        <div class="bg-3d-object bg-cube-small" style="top: 10%; left: 5%; animation: bgCubeFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 15%; left: 15%; animation: bgSphereFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 25%; left: 8%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 35%; left: 12%; animation: bgHexagonFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 45%; left: 6%; animation: bgDiamondFloat1 5s infinite;"></div>
+        
+        <!-- Top Right Quadrant -->
+        <div class="bg-3d-object bg-cube-medium" style="top: 8%; right: 10%; animation: bgCubeFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 18%; right: 5%; animation: bgSphereFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 28%; right: 15%; animation: bgTriangleFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 38%; right: 8%; animation: bgDiamondFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 48%; right: 12%; animation: bgHexagonFloat2 5s infinite;"></div>
+        
+        <!-- Bottom Left Quadrant -->
+        <div class="bg-3d-object bg-cube-small" style="bottom: 15%; left: 10%; animation: bgCubeFloat3 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 25%; left: 5%; animation: bgSphereFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 35%; left: 18%; animation: bgTriangleFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 45%; left: 12%; animation: bgDiamondFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 55%; left: 8%; animation: bgHexagonFloat1 7s infinite;"></div>
+        
+        <!-- Bottom Right Quadrant -->
+        <div class="bg-3d-object bg-cube-medium" style="bottom: 12%; right: 8%; animation: bgCubeFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 22%; right: 15%; animation: bgSphereFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 32%; right: 6%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 42%; right: 12%; animation: bgDiamondFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 52%; right: 10%; animation: bgHexagonFloat2 6s infinite;"></div>
+        
+        <!-- Center Scattered Objects -->
+        <div class="bg-3d-object bg-cube-small" style="top: 60%; left: 45%; animation: bgCubeFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 70%; left: 55%; animation: bgSphereFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 20%; left: 50%; animation: bgTriangleFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 80%; left: 40%; animation: bgDiamondFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 30%; left: 60%; animation: bgHexagonFloat1 5s infinite;"></div>
+        
+        <!-- Additional Scattered Objects -->
+        <div class="bg-3d-object bg-cube-medium" style="top: 5%; left: 30%; animation: bgCubeFloat3 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 85%; left: 20%; animation: bgSphereFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 50%; left: 80%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 65%; left: 75%; animation: bgDiamondFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 40%; left: 85%; animation: bgHexagonFloat2 8s infinite;"></div>
+        
+        <!-- Edge Objects -->
+        <div class="bg-3d-object bg-cube-small" style="top: 75%; left: 2%; animation: bgCubeFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 55%; right: 2%; animation: bgSphereFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 90%; left: 70%; animation: bgTriangleFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 10%; right: 25%; animation: bgDiamondFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 95%; left: 50%; animation: bgHexagonFloat1 5s infinite;"></div>
+        
+        <!-- Additional Dense Coverage -->
+        <div class="bg-3d-object bg-cube-small" style="top: 12%; left: 25%; animation: bgCubeFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 22%; left: 35%; animation: bgSphereFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 32%; left: 45%; animation: bgTriangleFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 42%; left: 55%; animation: bgDiamondFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 52%; left: 65%; animation: bgHexagonFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-cube-medium" style="top: 62%; left: 75%; animation: bgCubeFloat3 6s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 72%; left: 85%; animation: bgSphereFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 82%; left: 95%; animation: bgTriangleFloat1 8s infinite;"></div>
+        
+        <!-- Right Side Dense Coverage -->
+        <div class="bg-3d-object bg-diamond" style="top: 15%; right: 35%; animation: bgDiamondFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 25%; right: 45%; animation: bgHexagonFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="top: 35%; right: 55%; animation: bgCubeFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 45%; right: 65%; animation: bgSphereFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 55%; right: 75%; animation: bgTriangleFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 65%; right: 85%; animation: bgDiamondFloat1 6s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 75%; right: 95%; animation: bgHexagonFloat2 7s infinite;"></div>
+        
+        <!-- Bottom Dense Coverage -->
+        <div class="bg-3d-object bg-cube-medium" style="bottom: 5%; left: 25%; animation: bgCubeFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 8%; left: 35%; animation: bgSphereFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="bottom: 11%; left: 45%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="bottom: 14%; left: 55%; animation: bgDiamondFloat2 9s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="bottom: 17%; left: 65%; animation: bgHexagonFloat1 5s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="bottom: 20%; left: 75%; animation: bgCubeFloat3 8s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="bottom: 23%; left: 85%; animation: bgSphereFloat1 6s infinite;"></div>
+        
+        <!-- Top Dense Coverage -->
+        <div class="bg-3d-object bg-triangle" style="top: 2%; left: 20%; animation: bgTriangleFloat2 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 4%; left: 40%; animation: bgDiamondFloat1 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 6%; left: 60%; animation: bgHexagonFloat2 6s infinite;"></div>
+        <div class="bg-3d-object bg-cube-small" style="top: 8%; left: 80%; animation: bgCubeFloat1 9s infinite;"></div>
+        <div class="bg-3d-object bg-sphere-small" style="top: 3%; right: 20%; animation: bgSphereFloat2 5s infinite;"></div>
+        <div class="bg-3d-object bg-triangle" style="top: 5%; right: 40%; animation: bgTriangleFloat1 7s infinite;"></div>
+        <div class="bg-3d-object bg-diamond" style="top: 7%; right: 60%; animation: bgDiamondFloat2 8s infinite;"></div>
+        <div class="bg-3d-object bg-hexagon" style="top: 9%; right: 80%; animation: bgHexagonFloat1 6s infinite;"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Exovade</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Creating Digital</span>
+                    <br>
+                    <span class="gradient-text">Experiences</span>
+                </h1>
+                <p class="hero-description">
+                    Passionate team crafting innovative solutions with modern technologies.
+                    Bringing ideas to life through elegant code and stunning design.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fab fa-js-square"></i>
+                </div>
+                
+                <!-- Isometric 3D Scene -->
+                <div class="isometric-scene">
+                    <div class="iso-element iso-phone"></div>
+                    <div class="iso-element iso-tablet"></div>
+                    <div class="iso-element iso-watch"></div>
+                    <div class="iso-element iso-headphones"></div>
+                    <div class="iso-element iso-laptop"></div>
+                    <div class="iso-element iso-camera"></div>
+                    <div class="iso-element iso-gamepad"></div>
+                    <div class="iso-element iso-speaker"></div>
+                    <div class="iso-element iso-chart"></div>
+                    <div class="iso-element iso-monitor"></div>
+                    <div class="iso-element iso-keyboard"></div>
+                    <div class="iso-element iso-cube"></div>
+                    <div class="iso-element iso-cube2"></div>
+                    <div class="iso-element iso-sphere"></div>
+                    <div class="iso-element iso-progress"></div>
+                </div>
+                
+                <!-- Floating Particles -->
+                <div class="floating-particles">
+                    <div class="particle" style="left: 10%; animation-delay: 0s;"></div>
+                    <div class="particle" style="left: 20%; animation-delay: 1s;"></div>
+                    <div class="particle" style="left: 30%; animation-delay: 2s;"></div>
+                    <div class="particle" style="left: 40%; animation-delay: 3s;"></div>
+                    <div class="particle" style="left: 50%; animation-delay: 4s;"></div>
+                    <div class="particle" style="left: 60%; animation-delay: 5s;"></div>
+                    <div class="particle" style="left: 70%; animation-delay: 6s;"></div>
+                    <div class="particle" style="left: 80%; animation-delay: 7s;"></div>
+                    <div class="particle" style="left: 90%; animation-delay: 8s;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <!-- About Section 3D Objects -->
+        <div class="section-3d-object about-cube" style="top: 15%; left: 8%; animation: aboutFloat1 7s infinite;"></div>
+        <div class="section-3d-object about-sphere" style="top: 25%; right: 12%; animation: aboutFloat2 6s infinite;"></div>
+        <div class="section-3d-object about-triangle" style="top: 45%; left: 5%; animation: aboutFloat3 8s infinite;"></div>
+        <div class="section-3d-object about-cube" style="top: 65%; right: 8%; animation: aboutFloat1 5s infinite;"></div>
+        <div class="section-3d-object about-sphere" style="top: 80%; left: 15%; animation: aboutFloat2 9s infinite;"></div>
+        <div class="section-3d-object about-triangle" style="top: 35%; right: 20%; animation: aboutFloat3 6s infinite;"></div>
+        <div class="section-3d-object about-cube" style="top: 55%; left: 25%; animation: aboutFloat1 8s infinite;"></div>
+        <div class="section-3d-object about-sphere" style="top: 75%; right: 25%; animation: aboutFloat2 7s infinite;"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">A passionate team creating exceptional digital experiences</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-main-title">We deliver <span class="highlight-text">scalable, intelligent,
+data-driven</span> solutions to innovators and students.</h3>
+                    <p class="about-description">
+                        Our cutting-edge technologies and expert teams empower faster development cycles, smarter decisions, and sustainable growth for mission-critical digital ecosystems.
+                    </p>
+                    <div class="about-links">
+                        <a href="our-mission.html" class="about-link">Our Mission <i class="fas fa-external-link-alt"></i></a>
+                        <a href="our-vision.html" class="about-link">Our Vision <i class="fas fa-external-link-alt"></i></a>
+                        <a href="our-technology.html" class="about-link">Our Technology <i class="fas fa-external-link-alt"></i></a>
+                        <a href="our-team.html" class="about-link">Our Team <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stats-header">
+                        <h4>About Exovade</h4>
+                    </div>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-number">900+</div>
+                            <div class="stat-description">Easy access to articles for university students.</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">~50.000</div>
+                            <div class="stat-description">Education Information PDF library.</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">~12,500</div>
+                            <div class="stat-description">Lines written to make life easier.</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-description">Experienced and Knowledgeable technology team.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <!-- Projects Section 3D Objects -->
+        <div class="section-3d-object projects-cube" style="top: 12%; left: 10%; animation: projectsFloat1 6s infinite;"></div>
+        <div class="section-3d-object projects-diamond" style="top: 20%; right: 15%; animation: projectsFloat2 8s infinite;"></div>
+        <div class="section-3d-object projects-hexagon" style="top: 35%; left: 6%; animation: projectsFloat3 7s infinite;"></div>
+        <div class="section-3d-object projects-cube" style="top: 50%; right: 10%; animation: projectsFloat1 9s infinite;"></div>
+        <div class="section-3d-object projects-diamond" style="top: 65%; left: 12%; animation: projectsFloat2 5s infinite;"></div>
+        <div class="section-3d-object projects-hexagon" style="top: 80%; right: 18%; animation: projectsFloat3 8s infinite;"></div>
+        <div class="section-3d-object projects-cube" style="top: 25%; left: 22%; animation: projectsFloat1 7s infinite;"></div>
+        <div class="section-3d-object projects-diamond" style="top: 40%; right: 22%; animation: projectsFloat2 6s infinite;"></div>
+        <div class="section-3d-object projects-hexagon" style="top: 70%; left: 18%; animation: projectsFloat3 9s infinite;"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-subtitle">A showcase of our latest work and achievements</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/zanist.png" alt="zanist" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://zanist.xyz" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/zanist" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Zanist</h3>
+                        <p class="project-description">
+                            A reliable and forward-thinking hub delivering up-to-date scientific discoveries and groundbreaking research, crafted to inform, inspire, and empower curious minds worldwide.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Library</span>
+                            <span class="tech-tag">University</span>
+                            <span class="tech-tag">Professors</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/toltira.png" alt="toltira" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://toltira.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/toltira" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Toltira</h3>
+                        <p class="project-description">
+                            A modern platform developed for dynamic websites. We offer next-generation output systems with a clean and functional design that focuses on user experience. You can create your website anytime.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Web AI</span>
+                            <span class="tech-tag">Intelligent</span>
+                            <span class="tech-tag">Self-Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/niviskar.png" alt="niviskar" style="width: 100%; height: 100%; object-fit: cover;">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://niviskar.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/niviskar" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Niviskar</h3>
+                        <p class="project-description">
+                            Harnessing cutting-edge algorithms to provide intelligent, accurate, and context-aware text analysis and summarization, designed to enhance understanding and streamline information processing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Summarize</span>
+                            <span class="tech-tag">Article</span>
+                            <span class="tech-tag">Knowledge</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <!-- Contact Section 3D Objects -->
+        <div class="section-3d-object contact-sphere" style="top: 18%; left: 7%; animation: contactFloat1 8s infinite;"></div>
+        <div class="section-3d-object contact-cube" style="top: 28%; right: 10%; animation: contactFloat2 6s infinite;"></div>
+        <div class="section-3d-object contact-triangle" style="top: 42%; left: 12%; animation: contactFloat3 7s infinite;"></div>
+        <div class="section-3d-object contact-sphere" style="top: 58%; right: 15%; animation: contactFloat1 9s infinite;"></div>
+        <div class="section-3d-object contact-cube" style="top: 72%; left: 8%; animation: contactFloat2 5s infinite;"></div>
+        <div class="section-3d-object contact-triangle" style="top: 85%; right: 12%; animation: contactFloat3 8s infinite;"></div>
+        <div class="section-3d-object contact-sphere" style="top: 35%; left: 20%; animation: contactFloat1 6s infinite;"></div>
+        <div class="section-3d-object contact-cube" style="top: 50%; right: 25%; animation: contactFloat2 7s infinite;"></div>
+        <div class="section-3d-object contact-triangle" style="top: 65%; left: 25%; animation: contactFloat3 9s infinite;"></div>
+        
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@exovade.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+90 (216) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Turkey, Istanbul</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Exovade</span>
+                    </div>
+                    <p style="margin-top: 1rem; color: rgba(255, 255, 255, 0.7); font-size: 0.9rem;">We are building innovative, future-ready solutions that not only meet the demands of the digital age, but also anticipate the challenges of tomorrow—empowering businesses and individuals to thrive in an ever-evolving technological landscape.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Exovade. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
